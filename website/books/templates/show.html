@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Show</title>
+    
+</head>
+<body>
+    <div>
+        <table border="1">
+            <thead>
+            <tr>
+                <td>Name</td>
+                <td>City</td>
+            
+            </tr>
+            </thead>
+            <tbody>
+                {#% for line in publisher_list %#}
+                    <tr>
+                        <td>{{publisher_list.name}}</td>
+                        <td>{{publisher_list.city}}</td>
+                    </tr>
+                {#%endfor%#}
+            </tbody>
+        </table>
+        
+    </div>
+</body>
+</html>

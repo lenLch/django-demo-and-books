@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Contact us</title>
+    
+</head>
+<body>
+    <h1 id="heading">Contact us</h1>
+    {%if form.errors%}
+        <p style="color:red;">
+            Please corret the error{{form.error | pluralize}} below.
+        </p>
+    {%endif%}
+    <form action="" method="post" accept-charset="utf-8">
+        <table>
+            {{form.as_table}}
+        </table>
+    <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
